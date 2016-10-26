@@ -1,0 +1,97 @@
+dl,dt,dd,ul,li {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+.red {
+	color: red!important;
+}
+.container {
+	width: 1080px;
+	height: 330px;
+	border: 2px black solid;	
+}
+.container::after {
+	content: "";
+	clear: both;
+	display: block;
+}
+.cld {
+	width: 420px;
+	height: 330px;
+	font-size: 20px;
+	text-align: center;
+}
+.cld_current {
+	float: left;
+}
+.cld_next {
+	float: right;
+}
+.cld_top {
+	float: left;
+	width: 420px;
+	height: 50px;
+	background-color: #03a9f4;
+	line-height: 50px;
+	color: #fff;
+}
+.cld .skip {
+	width: 60px;
+	height: 50px;
+}
+.cld .cld_title {
+	width: 360px;
+	height: 50px;
+}
+.cld_current .skip{
+	float: left;
+}
+.cld_current .cld_title{
+	float: right;
+}
+.cld_next .skip {
+	float: right;
+}
+.cld .skip:hover{
+	cursor: pointer;
+	color: #f40;
+}
+.cld_next .cld_title {
+	float: left;
+}
+.cld .cld_body {
+	float: left;
+	line-height: 40px;
+	font-size: 16px;
+	color: #706e73;
+}
+.cld .cld_body .cld_week {
+	float: left;
+	width: 420px;
+	height: 40px;
+	font-weight: bold;
+}
+.cld .cld_body .cell {
+	float: left;
+	width: 59px;
+	height: 39px;
+	border: 1px black solid;
+}
+.cld_current .cld_body .cell{
+	margin-left: -1px;
+}
+.cld_next .cld_body .cell{
+	margin-right: -1px;
+}
+.cld .cld_body .cld_date{
+	float: left;
+	margin-top: 1px;
+}
+.cld .cld_body .cld_date .cell{
+	margin-top: -1px;
+}
+.cld .cld_body .cld_date {
+	width: 420px;
+	height: 240px;
+}
