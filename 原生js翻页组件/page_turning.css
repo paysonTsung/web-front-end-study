@@ -1,0 +1,68 @@
+.wrapper {
+    width: 650px;
+    height: 800px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.wrapper #itemList {
+    width: 650px;
+    height: 710px;
+}
+.wrapper #itemList .item {
+    position: relative;
+    top: 0; 
+    left: 0;
+    width: 650px;
+    height: 80px;
+    margin: 10px 0;
+    background-color: greenyellow;
+    opacity: 1;
+}
+.wrapper #changePage {
+    width: 650px;
+    height: 80px;
+    margin: 10px 0;
+}
+.wrapper #changePage li {
+    float: left;
+    margin: 19px 4px;
+    font-size: 20px;
+    line-height: 40px;
+    text-align: center;
+    font-family: Arial;
+    border: 1px solid #e1e2e3;
+}
+.wrapper #changePage .page-num {
+    width: 40px;
+    height: 40px;
+}
+
+.wrapper #changePage 
+li.page-num:hover,
+li.pre-page:hover,
+li.next-page:hover,
+li.first-page:hover,
+li.last-page:hover {
+    cursor: pointer;
+    border: 1px solid dodgerblue;
+    background-color: lightskyblue;
+}
+.wrapper #changePage li.cur-page {
+    width: 40px;
+    height: 40px;
+    font-weight: bold;    
+    border: 1px solid white;
+}
+.wrapper #changePage 
+.pre-page,
+.next-page,
+.first-page,
+.last-page {
+    width: 90px;
+    height: 40px;
+}
